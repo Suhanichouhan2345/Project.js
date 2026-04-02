@@ -1,0 +1,122 @@
+Round 1 Solutions
+Q1
+const greetFunc = user.greet;
+greetFunc();
+
+Output: undefined (or error in strict mode)
+
+ Why?
+this depends on how function is called, not where it’s written.
+Here it’s called as a normal function → this = global object → no username.
+
+Q2
+inner();
+
+ Output: undefined
+
+ inner() is a normal function → this = global object
+
+Fix:
+
+const inner = () => {
+    console.log(this.username);
+}
+
+OR
+
+inner.call(this);
+🔹 Round 2 Solutions
+Q3
+greet: () => {
+    console.log(this.username);
+}
+
+ Output: undefined
+
+ Arrow functions don’t have their own this
+They take this from outer scope (global here)
+
+Q4
+obj.getValue()();
+
+ Output: 10
+
+ Flow:
+
+getValue() → returns arrow function
+arrow function takes this from getValue → obj
+so this.value = 10
+🔹 Round 3 Solutions
+Q5
+const func = () => { name: "hitesh" }
+
+ Output: undefined
+
+ {} is treated as block, not object
+
+Q6 Fix
+const func = () => ({ username: "hitesh" })
+
+ Wrap object in () to return it
+
+🔹 Round 4 Solutions
+Q7 (Squares)
+const arr = [1,2,3,4];
+const result = arr.map(num => num * num);
+console.log(result);
+
+ Output: [1, 4, 9, 16]
+
+Q8 Difference
+Method	Use Case
+forEach	side effects (print, update)
+map	transform + return new array
+
+👉 Interview line:
+
+"map returns new array, forEach does not"
+
+🔹 Round 5 Solutions
+Q9
+setTimeout(user.greet, 1000);
+
+ Output: undefined
+
+ function passed separately → loses this
+
+ Fix:
+
+setTimeout(user.greet.bind(user), 1000);
+Q10
+setTimeout(() => {
+    user.greet();
+}, 1000);
+
+ Output: "hitesh"
+
+ because we call it properly via object
+
+🔹 Bonus Answers
+Q11
+Method	Meaning
+call	call immediately, args separate
+apply	call immediately, args array
+bind	returns new function
+Q12
+
+ Arrow functions:
+
+ no own this
+ no arguments
+
+ Because they are lexically scoped
+
+🔥 Super Important Interview Summary
+
+ Remember these 5 lines:
+
+this depends on call site
+Arrow function → no own this
+Object methods → use normal function
+map → returns new array
+To return object → wrap in ()
