@@ -21,7 +21,7 @@ let state;
 // undefined => 
 // symbol => unique
 
-console.log(typeof[name,age,isLoggedIn,state]);//object
+console.log([name,age,isLoggedIn,state]);//object
 console.table([name,age,isLoggedIn,state]);
 console.table( typeof[name,age,isLoggedIn,state]); //object
 
@@ -30,3 +30,4 @@ console.log(typeof (age)); //number
 
 console.log(typeof (undefined)); //undefined
 console.log(typeof (null)); //object
+console.log(typeof (NaN)); // number
