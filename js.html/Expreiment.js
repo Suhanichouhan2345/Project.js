@@ -1,91 +1,74 @@
-/*
-let b = a;
-let a = b;
-console.log(a, b);
-b = 20;
-console.log(a, b);
-*/
+const collage = {
+  name : 'Sistec-Gn',
+  "My name" : "Suhani chouhan",
+  age : 19,
+  arry : ['one' , 'two']
 
-//let x;
-//console.log(x); //undefined
-x = 5; //
-//console.log(x); //5
-
-//var a = 10;
-//var a = 20;
-//console.log(a);
-
-/*
-let a = 10;
-{
-  let a = 20;
-  console.log(a); // throw error
 }
-console.log(a);
-*/
-
+//console.log(collage);
 
 /*
-let a = 10;
-console.log(a);
 {
-  let b = 20;
-  console.log(b); 
-}
-*/
-
-//console.log(z); // undefined
-//var z = 5;
-
-
-
-/*
-let a = 10;
-{
-  let a = 20;
+  name: 'Sistec-Gn',
+  'My name': 'Suhani chouhan',
+  age: 19,
+  arry: [ 'one', 'two' ]
 }
 
-console.log(a); //10 */
+*/
+//const suhani = Symbol("uma");
+
+//const value = {
+  //[suhani] : "suhanichouhan"
+//}
+//console.log(value) //{ Symbol(uma): 'suhanichouhan' }
 
 /*
-var a = 10;
-{
-  var a = 20;
+const suhani = Symbol("uma");
+
+const value = {
+  suhani : "suhanichouhan"
 }
-
-console.log(a); //20 */
-
-/*
-const value = "use strict"; // treat all JS code as newer version
-//console.log(value);
-
-//const alert = suhani(4+7); // eror
-//console.log(alert)
-//console.log(alert(4+3));
-
-
-const add = 9 + 7 ;
-//console.log(add)
-
-console.log(typeof (NaN))
-
+console.log(value) //{ suhani: 'suhanichouhan' }
 */
 
-//console.log( 3 + 2+'true'+67+9 ); //4
-//console.log(typeof 3 + 2+'true'+67+9 );  
+const mySym = Symbol("key1")
+
+const JsUser = {
+    name: "Hitesh",
+    "full name": "Hitesh Choudhary",
+    [mySym]: "mykey1",
+    age: 18,
+    location: "Jaipur",
+    email: "hitesh@google.com",
+    isLoggedIn: false,
+    lastLoginDays: ["Monday", "Saturday"]
+}
+
+//console.log(JsUser.full name"]); error
+
+//console.log(JsUser["full name"]);
+//console.log(JsUser[" full name"]); // undefined resion space 
+
+//JsUser.email = "hitesh@chatgpt.com"
+ //Object.freeze(JsUser)
+JsUser.email = "hitesh@microsoft.com"
+ Object.freeze(JsUser)
+ console.log(JsUser);
 
 
-let suhani = '5';
-let dii = "5";
+/*
+console.table(JsUser);
 
-let value =  Number(suhani);
-let value2 = Number(dii);
-
-console.log(typeof suhani); //string
-console.log(typeof dii); //string
-
-
-console.log(typeof value); //number
-console.log(typeof value2); // number
-
-
+┌───────────────┬──────────┬────────────┬─────────────────────┐
+│ (index)       │ 0        │ 1          │ Values              │
+├───────────────┼──────────┼────────────┼─────────────────────┤
+│ name          │          │            │ 'Hitesh'            │
+│ full name     │          │            │ 'Hitesh Choudhary'  │
+│ age           │          │            │ 18                  │
+│ location      │          │            │ 'Jaipur'            │
+│ email         │          │            │ 'hitesh@google.com' │
+│ isLoggedIn    │          │            │ false               │
+│ lastLoginDays │ 'Monday' │ 'Saturday' │                     │
+└───────────────┴──────────┴────────────┴─────────────────────┘
+*/
