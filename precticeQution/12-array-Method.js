@@ -9,7 +9,7 @@ const varibleAraay = ["XYZ" , "palak" , "sawani" , "shareeya" ];
 //console.log(varibleAraay);
 
 const myArray2 = new Array(1,2,3,4,"suhani");
-//console.log(myArray2 );
+console.log(myArray2 );
 
 
 const array = [0,1,2,6];

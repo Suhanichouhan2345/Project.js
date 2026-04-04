@@ -149,3 +149,110 @@ console.table(JsUser);
 │ lastLoginDays │ 'Monday' │ 'Saturday' │                     │
 └───────────────┴──────────┴────────────┴─────────────────────┘
 */
+
+const person = {
+  firstName: "John",
+  lastName: "Doe"
+};
+
+//console.log("firstName" in person);//true
+//console.log("John" in person);//false
+
+
+myObj = {
+  name:"John",
+  age:30,
+  myCars: {
+    car1:"Ford",
+    car2:"BMW",
+    car3:"Fiat"
+  }
+}
+//console.log(myObj.myCars.car2);
+//delete myObj.myCars.car2;
+//console.log(myObj)
+
+
+/*
+You can access nested objects using the dot notation or the bracket notation:
+
+Examples
+myObj.myCars.car2;
+myObj.myCars["car2"];
+myObj["myCars"]["car2"];
+let p1 = "myCars";
+let p2 = "car2";
+myObj[p1][p2];
+Summary
+Object properties are key:value pairs
+Access properties with dot notation or bracket notation
+Add, change, and delete properties using assignment and delete
+Use the in operator to check if a property exists
+*/
+
+/*
+
+const arry = ["suhni" , 2];
+//console.log(arry);
+arry[2] = "Rohit";
+
+Object.freeze(arry);
+console.log(arry);
+//[ 'suhni', 2, 'Rohit' ]
+
+*/
+const arry = ["suhni" , 2];
+//console.log(arry);
+arry[3] = "Rohit";
+
+Object.freeze(arry);
+console.log(arry);
+
+//[ 'suhni', 2, <1 empty item>, 'Rohit' ]
+
+
+const users = [
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+]
+console.log(users[0]); // first user
+console.log(users[1]); // second user
+console.log(users[2]); // third user
+
+
+// error on th9i compiler user online complier
+
+/*
+const users = [
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 1,
+        email: "h@gmail"
+    },
+    {
+        id: 1,
+        email: "Suhani.com"
+    },
+]
+console.log(users[0].email); // first user
+console.log(users[1]); // second user
+console.log(users[2]); // third user
+
+output:
+h@gmail.com
+{ id: 1, email: 'h@gmail' }
+{ id: 1, email: 'Suhani.com' }
+*/

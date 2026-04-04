@@ -1,74 +1,15 @@
-const collage = {
-  name : 'Sistec-Gn',
-  "My name" : "Suhani chouhan",
-  age : 19,
-  arry : ['one' , 'two']
+const array = [0,1,2,6];
+//array.pop();
+//console.log(array);//[ 0, 1, 2 ]  //piche se value hatana
 
-}
-//console.log(collage);
+const array2 = [0,1,2,6];
+//array2.push(0);
+//console.log(array2)//[ 0, 1, 2, 6 ]  //piche se value add
 
-/*
-{
-  name: 'Sistec-Gn',
-  'My name': 'Suhani chouhan',
-  age: 19,
-  arry: [ 'one', 'two' ]
-}
+const array3 = [0,1,2,6];
+//array3.unshift(2);
+//console.log(array3)  //aage se value add
 
-*/
-//const suhani = Symbol("uma");
-
-//const value = {
-  //[suhani] : "suhanichouhan"
-//}
-//console.log(value) //{ Symbol(uma): 'suhanichouhan' }
-
-/*
-const suhani = Symbol("uma");
-
-const value = {
-  suhani : "suhanichouhan"
-}
-console.log(value) //{ suhani: 'suhanichouhan' }
-*/
-
-const mySym = Symbol("key1")
-
-const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
-    age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
-    isLoggedIn: false,
-    lastLoginDays: ["Monday", "Saturday"]
-}
-
-//console.log(JsUser.full name"]); error
-
-//console.log(JsUser["full name"]);
-//console.log(JsUser[" full name"]); // undefined resion space 
-
-//JsUser.email = "hitesh@chatgpt.com"
- //Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
- Object.freeze(JsUser)
- console.log(JsUser);
-
-
-/*
-console.table(JsUser);
-
-┌───────────────┬──────────┬────────────┬─────────────────────┐
-│ (index)       │ 0        │ 1          │ Values              │
-├───────────────┼──────────┼────────────┼─────────────────────┤
-│ name          │          │            │ 'Hitesh'            │
-│ full name     │          │            │ 'Hitesh Choudhary'  │
-│ age           │          │            │ 18                  │
-│ location      │          │            │ 'Jaipur'            │
-│ email         │          │            │ 'hitesh@google.com' │
-│ isLoggedIn    │          │            │ false               │
-│ lastLoginDays │ 'Monday' │ 'Saturday' │                     │
-└───────────────┴──────────┴────────────┴─────────────────────┘
-*/
+const array4 = [0,1,2,6];
+array4.shift();
+console.log(array4);
