@@ -256,3 +256,130 @@ h@gmail.com
 { id: 1, email: 'h@gmail' }
 { id: 1, email: 'Suhani.com' }
 */
+
+const array = [0,1,2,6];
+//array.pop();
+//console.log(array);//[ 0, 1, 2 ]  //piche se value hatana
+
+const array2 = [0,1,2,6];
+//array2.push(0);
+//console.log(array2)//[ 0, 1, 2, 6 ]  //piche se value add
+
+const array3 = [0,1,2,6];
+//array3.unshift(2);
+//console.log(array3)  //aage se value add
+
+const array4 = [0,1,2,6];
+array4.shift();
+console.log(array4);
+
+
+
+const sym1 = Symbol("myID");
+const sym2 = Symbol("myID");
+
+console.log(sym1 === sym2); // false (Har symbol apne aap mein unique hai)
+
+let user = {
+    name: "Rahul",
+    age: 25
+};
+
+let id = Symbol("id");
+
+// Symbol ko as a key use karna
+user[id] = 12345;
+
+console.log(user[id]); // 12345
+console.log(user.name); // Rahul
+
+//unique , immutable ,collision protection
+
+
+
+const user = {
+  name: "Aman",
+  age: 17
+};
+
+Object.freeze(user);
+
+user.age = 18;       // ❌ change nahi hoga
+user.city = "Delhi"; // ❌ add nahi hoga
+delete user.name;    // ❌ delete nahi hoga
+
+console.log(user);
+// { name: "Aman", age: 17 }
+
+
+
+Important baat ⚠️
+
+Freeze shallow hota hai (sirf top level pe apply hota hai)
+
+const user = {
+  name: "Aman",
+  address: {
+    city: "Delhi"
+  }
+};
+
+Object.freeze(user);
+
+user.address.city = "Mumbai"; // ✅ change ho jayega!
+
+👉 Isliye nested objects ko freeze karne ke liye deep freeze karna padta hai.
+
+
+
+const user = {
+  name: "Aman",
+  address: {
+    city: "Delhi"
+  }
+};
+
+Object.freeze(user.address); // jis objects par lgega vo hi freez hofa bss
+
+
+user.address.city = "Mumbai"; // not change ho jayega!
+user.name ="rohit";
+console.log(user) //{ name: 'rohit', address: { city: 'Delhi' } }
+
+// seal meanthd
+🔹 Object.seal() kya karta hai?
+
+Object.seal() object ko partially lock karta hai 🔒
+
+👉 Matlab:
+
+❌ New properties add nahi kar sakte
+❌ Properties delete nahi kar sakte
+✅ Existing properties ko update kar sakte ho
+🔹 Example
+const user = {
+  name: "Aman",
+  age: 17
+};
+
+Object.seal(user);
+
+user.age = 18;       // ✅ update ho jayega
+user.city = "Delhi"; // ❌ add nahi hoga
+delete user.name;    // ❌ delete nahi hoga
+
+console.log(user);
+// { name: "Aman", age: 18 }
+🔹 Check kaise kare sealed hai ya nahi
+console.log(Object.isSealed(user)); // true
+🔹 freeze() vs seal() (simple difference)
+Feature	freeze() ❄️	seal() 🔒
+Add property	❌ नहीं	❌ नहीं
+Delete property	❌ नहीं	❌ नहीं
+Update property	❌ नहीं	✅ हाँ
+💡 Easy samajh
+freeze() = full lock (kuch bhi change nahi) 🔐
+seal() = half lock (sirf update allowed) 🔓
+
+Agar tum interview ke liye padh rahe ho, to ye question bahut common hai 😄
+Chaho to main ek real-life example (API data ya config object) bhi dikha deta hoon 👍

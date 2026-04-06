@@ -3,3 +3,73 @@ Methods are actions that can be performed on objects.
 
 Methods are functions stored as property values.
 
+🔹 Object properties (user ke data)
+const user = {
+  name: "Aman",
+  age: 17,
+  city: "Delhi"
+};
+
+Yahan:
+
+name, age, city → properties (keys)
+"Aman", 17, "Delhi" → values
+🔹 Properties ko access kaise karein
+1. Dot notation (sabse common ✅)
+console.log(user.name); // Aman
+console.log(user.age);  // 17
+2. Bracket notation
+console.log(user["city"]); // Delhi
+
+👉 Jab key dynamic ho tab useful:
+
+let key = "name";
+console.log(user[key]); // Aman
+🔹 Property add / update / delete
+➕ Add ya update
+user.email = "aman@gmail.com";
+user.age = 18;
+❌ Delete
+delete user.city;
+🔹 Check property exist karti hai ya nahi
+console.log("name" in user); // true
+
+ya
+
+console.log(user.hasOwnProperty("age")); // true
+🔹 Loop through properties
+for (let key in user) {
+  console.log(key, user[key]);
+}
+💡 Simple samajh
+
+Object = ek “user ka profile”
+Properties = us profile ke fields (name, age, etc.)
+
+Agar tum chaho to main real project example (login system ya form data) me bhi dikha sakta hoon 👍
+
+const user = {
+  name: "Aman",
+  age: 17
+};
+
+Object.freeze(user);
+
+user.age = 18;       // ❌ change nahi hoga
+user.city = "Delhi"; // ❌ add nahi hoga
+delete user.name;    // ❌ delete nahi hoga
+
+console.log(user);
+// { name: "Aman", age: 17 }
+
+
+const user = {
+  name: "Aman",
+  address: {
+    city: "Delhi"
+  }
+};
+
+Object.freeze(user);
+
+user.address.city = "Mumbai"; // ✅ change ho jayega!
