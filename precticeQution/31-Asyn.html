@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>You can do it</h1>
+    <Button id="stop">Stop</Button>
+</body>
+<script>
+    //setTimeout(function(){
+      //  console.log("Suhani");
+    //},2000);
+
+// const val = function(){
+  //  console.log("Suhani Chouhan");
+ //}
+ //setTimeout(val ,2000);
+
+ 
+ //const val1 = function(){
+ //document.querySelector('h1').innerHTML = "Suhani you can do it :) ! "
+ //}
+ //setTimeout(val ,2000);
+
+
+ const changeText = function(){
+    document.querySelector('h1').innerHTML="Don't Give Up Suhani ,Trust your self "
+ }
+ //setTimeout(changeText,1000);
+ const change = setTimeout(changeText,2000);
+
+ document.querySelector("#stop").addEventListener("click" , function(){
+    clearTimeout(change);
+    console.log("Stooped");
+ })
+
+
+</script>
+</html>
