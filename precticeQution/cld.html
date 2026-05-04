@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center the form on the page */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Form container */
+form {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Inputs styling */
+form input {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Focus effect */
+form input:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* File input customization */
+input[type="file"] {
+    padding: 8px;
+    background: #f7f7f7;
+}
+
+/* Submit button */
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #4facfe;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover */
+form button:hover {
+    background: #00c6ff;
+    transform: translateY(-2px);
+}
+
+/* Button click */
+form button:active {
+    transform: scale(0.98);
+}
+    </style>
+</head>
+
+<body>
+    <form onsubmit="handleSubmit(event)">
+        <input id="name" type="text" placeholder="Enter Your Name">
+        <input type="number" id="contact" placeholder="Contact Number">
+        
+        <input type="email" id="email" placeholder="Enter E-mail">
+        <input type="password" id="password" placeholder="Enter Password">
+        <input id="file" type="file" placeholder="Add Profile">
+        <button type="submit" id="submit">Sumit</button>
+    </form>
+
+
+    <script>
+        async function handleSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value
+            const number = document.getElementById('contact').value
+            const email = document.getElementById('email').value
+            const password = document.getElementById('password').value
+            const file = document.getElementById('file').files[0]
+
+            const cloudName = 'dcnpdwu5n'
+            const formData = new FormData()
+
+            formData.append('upload_preset', 'ml_default')
+            formData.append('file', file)
+
+            const url = `https://api.cloudinary.com/v1_1/${cloudName}/upload`
+
+            try {
+                const res = await fetch(url, {
+                    method: 'POST',
+                    body: formData
+                })
+
+                const data = await res.json()
+
+                const userData = {
+                    name,
+                    number,
+                    email,
+                    password,
+                    img_url: data.secure_url
+                }
+
+                localStorage.setItem('data', JSON.stringify(userData))
+
+            } catch (error) {
+                console.error(error)
+            }
+        }
+    </script>
+
+</body>
+
+</html>
