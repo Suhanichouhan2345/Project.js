@@ -1,0 +1,901 @@
+
+
+                                CSS NOTES 
+
+
+<div style=" height:100px;background-color:cornflowerblue;width: 600px; float: left;"></div>
+<div style=" height: 100px;background-color:rebeccapurple;width: 600px; float: left;"></div>
+<div style=" height: 100px;background-color:rgb(237, 216, 100);width: 600px; float:left;"></div>
+
+------------------------------------------------------------------------------
+</head>
+<body bgcolor="greenyellow" >
+<div> <div style=" height: 50px;background-color:rebeccapurple;width: 1500px; float: left;"></div> </div>
+<div><br><br><br><br>
+    
+    <div style=" height: 50px;background-color:red;width: 300px; float: left;"></div> 
+
+
+    <div style="height: 50px;background-color: blue;width: 300px;float: left"></div>
+
+        <div style="height: 50px;background-color: white;width: 300px;float: left"></div>  
+</div> 
+
+<br><br><br><br>
+
+   <div style="height: 50px;background-color: rgb(195, 255, 0);width: 300px;float: left"></div>
+
+        <div style="height: 50px;background-color: white;width: 300px;float: left"></div>        
+
+______________________________________________________________________________
+
+</head>
+<body>
+ <div style="height: 300px; width: 400px;background-color: yellow; border-radius: 10%;margin-left: 400px;">
+    <img src="eaam.jpg"height="100"width="100">
+    <p style="font-size: 40px;">html course for beginner</p></div>
+
+</body>
+</html>
+
+________________________________________________________________________________________
+ <img src="eaam.jpg"height="100"width="100" style="margin-left: 100px;margin-top: 20px;">// yw isliye kwyouke mujhe jo box h ousmain left right main shift karna h 
+ _________________________________________________________________________________________________________________________________________________________________________________
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, fuga? Eveniet dolorem expedita ipsam tempora ea molestias distinctio quibusdam! Inventore natus impedit dolore nemo odio enim possimus iure ducimus eveniet.
+{Lorem likhne se kuch aa jata h likha hua}
+
+</head>
+<body >
+        <img src="eaam.jpg"height="100"width="100" style="float: left;">
+   
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, fuga? Eveniet dolorem expedita ipsam tempora ea molestias distinctio quibusdam! Inventore natus impedit dolore nemo odio enim possimus iure ducimus eveniet.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolorum ipsa libero eligendi enim odio earum placeat voluptas animi exercitationem, veniam saepe facilis corporis non maxime molestias voluptatem ipsum necessitatibus.
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum aspernatur necessitatibus et doloribus hic, repellendus sit in dolore culpa debitis ea atque amet officiis repellat laborum quae beatae temporibus itaque.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, ducimus, culpa omnis eius porro maxime in numquam excepturi ipsum, voluptatem aspernatur eaque ullam ipsa. Accusamus, quod. Unde nihil corrupti ipsum.
+
+{image ke age chale jata h or float se image araange ho jate h}
+</body>
+</html>
+
+___________________________________________________________________________
+<body style="background-color: rgb(8, 94, 94);"> // background color ke liye ye fount uase karte h 
+rgb and hexa is ka color
+_______________________________________________________
+
+</head>
+<body>
+    <div style="height: 100px; width: 100px;border: 2px solid rebeccapurple; padding:50px;"><h2>hellow india </h2></div>
+    
+</body>
+</html> // padding use krna padding left padding right
+___________________________________________________---------------------------
+
+
+body bgcolor="pink">
+    <div style="height: 100px; width: 150px;border-style: dotted dashed double;border-left-width: 5px; border-color: blue; margin: 20px 30px 10px 100px; "><h4>hellow india </h4></div>
+     // margin ko set karmne ka seen h
+___________________________________________________________________________________
+
+id is use for (.) 
+and prx is use for use so may time (:) the thye colloum is use 
+
+__________________________________________________________________________--------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internal css -->
+     <style >
+       body, html {
+         height: 100%
+       }
+       .prx{
+         background-image: url(eaam.jpg) ;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         background-position: center;
+         height: 5000px;
+       }
+     </style>
+</head>
+<body>
+<div class="prx"></div>
+<div style="height:500px;background-color: red;font-size: 36px;">
+   Hello India
+</div>
+<div class="prx"></div>
+<div style="height:500px;background-image:url(eaam.jpg);font-size: 36;">
+   Hello India
+</div>
+<div class="prx"></div>
+<div class="prx"></div>
+</body>
+</html>
+
+__________________________________________------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+#xyz {height: 200px; width: 300px ; background-color:aqua; box-shadow : 50px 50px 20px 10px red;}
+
+</style>
+
+  
+  <body> 
+<div id="xyz"></div>
+</body>
+</html>
+
+__________________________________________________________________________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+#xyz {height: 200px; width: 300px ; 
+  background-color:aqua;
+   box-shadow : 50px 50px 20px 10px red, 70px 70px 20px 5px green;
+  }
+
+</style>
+
+  
+  <body> 
+<div id="xyz"></div>
+</body>
+</html>
+
+__________________________________________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+#xyz {
+  height: 200px; width: 300px ; 
+  background-color:aqua;
+   box-shadow :  0  0 1px 1px red;
+   margin: 150px;
+   padding: 50px; 
+  }
+
+</style>
+</head>
+  
+  <body> 
+<div id="xyz">
+Name : <input type="text"><br><br>
+Name : <input type="text">
+</div>
+</body>
+</html>
+
+______________________________________________________________________________________________________----------
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+#xyz {
+  height: 200px; width: 300px ; 
+ border: 20x solid palevioletred;
+ overflow: scroll;
+   
+  }
+
+</style>
+</head>
+  
+  <body> 
+<div id="xyz">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus quos, nulla, itaque eaque delectus voluptatum quae quis quas, nihil minima? Sint nam tempore dolorum ipsum hic. In, ea labore.
+</div>
+</body>
+</html>
+
+___________________________________________________________________---
+
+monday 17 / 12 /25
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel ="stylesheet" href="web.css"type="text/css">
+  <title>Document</title>
+
+
+</head>
+  <h2>java </h2>
+  <p> css</p>
+  <h1> X from bhopal </h1> </h2>
+  <p>  java css</p>
+  <h3> y form goa </h3>
+  <p>  java script css</p>
+  <h2> z form dehli </h2>
+  <p> paython</p>
+  <h6>java </h6>
+  <p> css</p>
+  <h1>java </h1>
+  <p> css</p>
+  
+  
+  <body> 
+    <h1 id = "xyz"></h1>
+<div id="xyz">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus quos, nulla, itaque eaque delectus voluptatum quae quis quas, nihil minima? Sint nam tempore dolorum ipsum hic. In, ea labore.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nulla ullam molestias quia modi? Natus reprehenderit aperiam distinctio quidem adipisci! Molestiae, fuga. Omnis esse maxime repudiandae corrupti, neque itaque. Obcaecati?
+</div>
+</body>
+</html>
+
+
+------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel ="stylesheet" href="web.css"type="text/css">
+  <title>Document</title>
+
+
+</head>
+  <h2 class xp>java </h2>
+  <p> css</p>
+  <h1 class="xp"> X from bhopal </h1> </h2>
+  <p>  java css</p>
+  <h3 class ="xp"> y form goa </h3>
+  <p>  java script css</p>
+  <h2> z form dehli </h2>
+  <p class="xp"> paython</p>
+  <h6>java </h6>
+  <p > css</p>
+  <h1>java </h1>
+  <p > css</p>
+
+<body> 
+<h1 id = "xyz"></h1>
+<div id="xyz">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus quos, nulla, itaque eaque delectus voluptatum quae quis quas, nihil minima? Sint nam tempore dolorum ipsum hic. In, ea labore.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nulla ullam molestias quia modi? Natus reprehenderit aperiam distinctio quidem adipisci! Molestiae, fuga. Omnis esse maxime repudiandae corrupti, neque itaque. Obcaecati?
+</div>
+</body>
+</html>
+
+---------------------------------------
+
+#xyz {
+  height: 200px; width: 300px ; 
+  background-color: blue;
+ border: 20x solid rgb(112, 195, 216);
+ overflow: scroll;
+ visibility: hidden;
+ display: none;
+  }
+
+
+  .xp{color: blue;}
+*{ border: 2px solid rebeccapurple;} = lineing ke liye use kiya jata h 
+---------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel ="stylesheet" href="web.css"type="text/css">
+  <title>Document</title>
+
+
+</head>
+<div>
+<div>
+  <h2 class xp>java </h2>
+  <p> css</p>
+  <h1 class="x p"> X from bhopal </h1> </h2>
+  <p>  java css</p>
+  <h3 class ="p"> y form goa </h3>
+  <p>  java script css</p>
+</div>
+  <h2> z form dehli </h2>
+  <p class="x"> paython</p>
+  <h6>java </h6>
+  <p class="p"> css</p>
+  <h1>java </h1>
+  <p class="x y "> css</p>
+</div>
+<body> 
+<h1 id = "xyz"></h1>
+<div id="xyz">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus quos, nulla, itaque eaque delectus voluptatum quae quis quas, nihil minima? Sint nam tempore dolorum ipsum hic. In, ea labore.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nulla ullam molestias quia modi? Natus reprehenderit aperiam distinctio quidem adipisci! Molestiae, fuga. Omnis esse maxime repudiandae corrupti, neque itaque. Obcaecati?
+</div>
+</body>
+</html>
+
+
+------------
+.x{color: blue;}
+  .p{background-color: pink}
+  _________________________________________________________
+
+  #xyz {
+  height: 200px; width: 300px ; 
+  background-color: blue;
+ border: 20x solid rgb(112, 195, 216);
+ overflow: scroll;
+ visibility: hidden;
+ display: none;
+  }
+
+
+  .x{color: blue;}
+  #p{background-color: pink}
+
+ div h1{color: rgb(95, 160, 101);}
+ -----------------------------------------------------------------------------------
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel ="stylesheet" href="web.css"type="text/css">
+  <title>Document</title>
+
+
+</head>
+
+<body> 
+<h1 id = "xyz"></h1>
+<div id="xyz">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus doloribus quos, nulla, itaque eaque delectus voluptatum quae quis quas, nihil minima? Sint nam tempore dolorum ipsum hic. In, ea labore.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nulla ullam molestias quia modi? Natus reprehenderit aperiam distinctio quidem adipisci! Molestiae, fuga. Omnis esse maxime repudiandae corrupti, neque itaque. Obcaecati?
+</div>
+
+<div>
+<div>
+  <h2 class xp>java </h2>
+  <p> css</p>
+  <h1 class="x" id =" p" style="color:brown"> X from bhopal </h1> </h2>
+  <p>  java css</p>
+  <h3 class ="p" > y form goa </h3>
+  <p>  java script css</p>
+</div>
+  <h2> z form dehli </h2>
+  <p class="x"> paython</p>
+  <h6>java </h6>
+  <p class="p"> css</p>
+  <h1>java </h1>
+  <p class="x y "> css</p>
+</div>
+
+<div id="main">
+<div id ="child1"></div>
+<div id ="child2"></div>
+
+<div id ="child3"></div>
+
+
+
+
+</div>
+
+</body>
+</html>
+
+#main{height: 150px; border: 2px solid rebeccapurple; width: 780;}
+#child1{height: 100px;width: 780; border: 2px solid rgb(51, 153, 87); display: inline-block; }
+#child2{height: 100px; width: 780;border: 2px solid rgb(153, 87, 51);  display: inline-block; }
+#child3{height: 100px; width: 780;border: 2px solid rgb(133, 153, 51);display: inline-block;}
+__________________________________________________________________________________________________________________
+
+
+
+
+#main{height: 130px;border:  2px solid red;width: 700px;margin: 150px;padding: 50px;}
+#child1{height: 100px;width: 100px;background-color: red ;
+display: inline-block;position:relative;left:70px;top:-20px;}
+#child2{height: 100px;width: 100px;background-color: blue ;
+display: inline-block;position:relative;left:70px;top:-20px;}
+#child3{height: 100px;width: 100px;background-color: green ;
+display: inline-block;position:fixed;left:70px;top:-20px;}
+
+
+--------------------------------
+
+main{height: 130px;border:  2px solid red;width: 700px;margin: 150px;padding: 50px; display: flex;justify-content: space-between; align-items: flex-end;}
+#child1{height: 100px;width: 100px;background-color: red ;flex-direction: row-reverse;}
+
+#child2{height: 100px;width: 100px;background-color: blue ;}
+
+#child3{height: 100px;width: 100px;background-color: green ;}
+
+#child4{height: 100px;width: 100px;background-color: rgb(128, 0, 119);
+}
+#child5{height: 100px;width: 100px;background-color: rgb(128, 0, 49);
+}
+
+
+flex-start
+flex-end
+space-between
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="web.css" type="text/css"
+</head>
+<body>
+  <div id="main">
+    <div id="child1"></div>
+    <div id="child2"></div>
+    <div id="child3"></div>
+    <div id="child4"></div>
+    <div id="child5"></div>
+  
+ 
+  <div style="height: 100px; width: 100px;background-color: aqua; display:inline-block;"> hello</div>
+   </div>
+</body>
+</html>
+
+__________________________________________________________________________________________________________________
+                                       
+                                       8/12/25
+                                    topic :-   sudoo
+                                  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  input:checked{}
+  input:enabled{}
+  input:disabled{}
+
+  </style>
+</head>
+<body>
+<input type="button"disabled>
+<input type="text">
+  
+</body>
+</html>
+-------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  p::first-line{color:brown}
+   p::first-letter{color:blue}
+   p::before{color:aqua}
+   p::after{color:blueviolet}
+  </style>
+</head>
+<body>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus consectetur molestiae quis, ut voluptatem, vero, nostrum alias aut illo ipsum quaerat vitae! Veritatis, quia ipsam! Illo a minus blanditiis assumenda.</p>  
+</body>
+</html>
+-------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+   p::before{color:aqua}
+   p::after{color:blueviolet}
+  </style>
+</head>
+<body>
+ <h1>pinkhuffwa hctyie4</h1>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus consectetur molestiae quis, ut voluptatem, vero, nostrum alias aut illo ipsum quaerat vitae! Veritatis, quia ipsam! Illo a minus blanditiis assumenda.</p>  
+</body>
+</html>
+------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+   p::before{color:aqua}
+   p::after{color:blueviolet}
+   p::selection{background-color: violet; color: blueviolet;}
+  </style>
+</head>
+<body>
+ <p>pinkhuffwa hctyie4</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus consectetur molestiae quis, ut voluptatem, vero, nostrum alias aut illo ipsum quaerat vitae! Veritatis, quia ipsam! Illo a minus blanditiis assumenda.</p>  
+ <p>pinkhuffwa hctyie4</p>
+</body>
+
+</html>
+--------------------------------------
+
+unit two type 
+1, absoulute unit := (cm, mm, in , px , pt, pc)
+
+one inch - 96px
+one inch = 72pt
+one pc = 12pt 
+
+2, relative unit := (em , rem, vh, vw , %)
+em = direct paraent ke according chalta 
+rem = root ke acording chalta h
+
+-------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+ #main{height: 400px; width: 1000px; border: 4px solid pink;}
+#child{ height: 200px; width:500; background-color: brown;}
+ 
+  </style>
+</head>
+<body> 
+  <div id="main">
+<div id="child"></div>    // ye parent ke hisab se chalta h 
+</div>
+
+</body>
+</html>
+-------------------------------
+
+10 / 12 / 15
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+
+    <style>
+        #div{
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+            animation: first 3s infinite;
+            transform-origin: center;
+        }
+
+        @keyframes first {
+            0%{
+                transform: translateX(0px);
+                opacity: 1;
+            }
+
+            20%{
+                border: 0px;
+                background-color: orchid;
+            }
+
+            50%{
+                transform: translateX(150px);
+                opacity: 1;
+            }
+
+            100%{
+                transform: translateX(180px);
+                opacity: 1;
+                background-color: red;
+                border-radius: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div"></div>
+</body>
+</html>
+-------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+
+    <style>
+       #div{
+          margin: 200px;
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+            animation: beats 2s infinite alternate;
+            transform-origin: center;
+        }
+
+        @keyframes beats {
+           to{
+               transform: scale(1.4);
+           }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div"></div>
+</body>
+</html>
+---------------------------
+
+logo , symbols , pitures:
+
+----------------
+svg : light wight images 
+
+font awesome : 
+
+
+CDN 
+------------------
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CSS Animation</title>
+
+    <style>
+      
+    
+    </style>
+</head>
+
+<body>
+  
+    <i class=" fa fa-car"></i>
+     <i class="fa fa-phone"></i>
+      <i class="fa fa-user"></i>
+     <i class="fa-brands fa-facebook-f"></i>
+</body>
+</html>
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+    <style>
+      
+    
+    </style>
+</head>
+
+<body>
+  
+    <i class=" fa fa-car" style="font-size: 100px; color: blueviolet;"></i>
+     <i class="fa fa-phone"></i>
+      <i class="fa fa-user"></i>
+     <i class="fa-brands fa-facebook-f"></i>
+     <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-user"></i>
+     
+</body>
+</html>
+_________________________________________________________________________________________________________________________________________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+    <style>
+      
+    
+    </style>
+</head>
+
+<body>
+  
+    <i class=" fa fa-car" style="font-size: 100px; color: blueviolet;"></i>
+     <i class="fa fa-phone" style="font-size: 100px; color: red ;"></i>
+      <i class="fa fa-user" style="font-size: 100px; color: pink;"></i>
+     <i class="fa-brands fa-facebook-f"style="font-size: 100px; color: yellow;"></i>
+     <i class="fa-solid fa-user"style="font-size: 100px; color: bule;"></i>
+      <i class="fa-solid fa-user"style="font-size: 100px; color: pink;"></i>
+     
+</body>
+</html>
+_________________________________________________________________________________________________________________
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      
+    #xyz{
+      height: 400px;
+      width: 500px;
+      background-color: blueviolet;
+      font-size: 5vw;  *****************************************************************
+    } 
+    </style>
+</head>
+
+<body>
+  
+    <div id="xyz"> HELLOW</div>
+     
+</body>
+</html>
+------------------------------------------------------------------------
+                                            // meadia queara
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      
+    #xyz{
+      height: 400px;
+      width: 500px;
+      background-color: blueviolet;
+      font-size: 5vw;
+    }
+    @media screen and (max-width:600px){
+       #xyz{height: 200px; width: 200px; background-color: aquamarine;}  *************************************
+    }
+      @media screen and (min-width:601px) and (max-width:800px){     ***************************
+       #xyz{height: 300px; width: 300px; background-color: pink;}
+    }
+      @media screen and (min-width:601px) and (max-width:800px){   ************************************
+       #xyz{height: 100px; width: 100px; background-color:blue;}
+    }
+    </style>
+</head>
+
+<body>
+  
+    <div id="xyz"> HELLOW</div>
+     
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    html,body{
+        height: 100vh;width: 100vw;
+        background-color: rgb(192, 145, 237);
+    }
+
+    .grid-basic{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4 ,120px);
+        row-gap: 10px;
+        column-gap: 20px;
+
+    }
+
+    .grid-basic div{
+        background-color: pink;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .bigbox{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .boxtall{
+        grid-column: span 2;
+    }
+    .wide{
+        grid-column: span 3;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="grid-basic">
+        
+        <div class="bigbox">Box 1</div>
+        <div class="boxtall">Box 2</div>
+        <div class="wide">Box 3</div>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="bigbox">Box 3</div>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    
+    </div>
+    
+</body>
+</html>
